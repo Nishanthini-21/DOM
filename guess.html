@@ -1,0 +1,26 @@
+<h1>Guess the Numnber from 1 to 10</h1>
+<input id="guess">
+<button onclick="fcheck()">Check</button>
+<p id="result">You are Right / Wrong</p>
+
+<script>
+    // create random number
+    var random=Math.floor(Math.random()*10)+1
+    console.log(random)
+    var guess=document.getElementById("guess")
+    function fcheck()
+    {
+        var guessed=Number(guess.value)
+        var p=document.getElementById("result")
+        if (random==guessed)
+        {
+            console.log("Right")
+            p.textContent="You are Right"
+        }
+        else
+        {
+            console.log("Wrong")
+            p.textContent="You are Wrong"
+        }
+    }
+</script>

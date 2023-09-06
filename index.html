@@ -1,0 +1,40 @@
+<!-- <h1 id="title">Hello world</h1>
+<button onclick="bclicked()">Change</button>
+<script>
+    function bclicked(){
+        // console.log("hello")
+        let h1=document.getElementById("title")
+        h1.textContent="Bye World"
+    }
+</script> -->
+
+<!-- <input id="inputbox">
+<button onclick="fcall()">click</button>
+<p id="result">result</p>
+<script>
+    function fcall(){
+        // selecting input tag
+        var inputbox=document.getElementById("inputbox")
+        // printing value from inputbox
+        console.log(inputbox.value)
+        // selecting paragraph tag
+        var result=document.getElementById("result")
+        // changing paragraph content to entered value
+        result.textContent=inputbox.value
+    }
+</script> -->
+
+<input id="num1" text="number">
+<input id="num2" text="number">
+<button onclick="add()">Add</button>
+<input id="result"></input>
+<script>
+    function add(){
+        var input1=document.getElementById("num1")
+        var input2=document.getElementById("num2")
+        var total=Number(input1.value)+Number(input2.value)
+        var result=document.getElementById("result")
+        console.log(total)
+        result.value=total
+    }
+</script>

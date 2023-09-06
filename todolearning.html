@@ -1,0 +1,169 @@
+<!-- 1. innerHTML basic -->
+
+<!-- <div id="box">
+    <p>hello</p>
+</div>
+<script>
+    // selecting div tag
+    var box=document.getElementById("box")
+    console.log(box.innerHTML)
+    box.innerHTML="<h1>Bye</h1>"
+    // box.textContent="<h1>Bye</h1>"
+</script> -->
+
+
+
+
+<!-- 2. append method -->
+
+<!-- <p id="para">Hello </p>
+<script>
+    var para=document.getElementById("para")
+    para.append("Hi")
+</script> -->
+
+
+
+
+
+<!-- 3. adding element -->
+
+<!-- <ul id="container">
+    <li>Hello</li>
+</ul>
+<button onclick="addlist()">Add list</button>
+
+<script>
+var cointainer=document.getElementById("container")
+function addlist()
+{
+    // creating an element - li
+    var listitem=document.createElement("li")
+    // adding text to li
+    listitem.textContent="Hello"
+    container.append(listitem)
+}
+</script> -->
+
+
+
+
+<!-- 4. adding user input to list -->
+
+<!-- <input id="inputu">
+<button onclick="additem()">ADD</button>
+<ul id="list"></ul>
+
+<script>
+    var inputu=document.getElementById("inputu")
+    var listy=document.getElementById("list")
+    function additem(){
+        var ele=document.createElement("li")
+        ele.textContent=inputu.value 
+        listy.append(ele)
+    }
+</script> -->
+
+
+
+
+
+<!-- 5. to delete item -->
+
+<!-- <h1 id="heading">Hello</h1>
+<button onclick="deleteitem()">Delete</button>
+<script>
+var heading=document.getElementById("heading")
+function deleteitem(){
+    heading.remove()
+}
+
+</script> -->
+
+
+
+<!-- 6. on click on h1 element -->
+
+<!-- <h1 id="heading" onclick="deleteitem()">Hello</h1>
+
+<script>
+var heading=document.getElementById("heading")
+function deleteitem(){
+    heading.remove()
+}
+
+</script> -->
+
+
+<!--  7.deleting multiple element using multiple fn's -->
+
+<!-- <h1 id="heading" onclick="deleteitem()">Hello</h1>
+<h1 id="one" onclick="deleteitemone()">One</h1>
+<h1 id="two" onclick="deleteitemtwo()">Two</h1>
+<h1 id="three" onclick="deleteitemthree()">Three</h1>
+<h1 id="four" onclick="deleteitemfour()">Four</h1>
+<h1 id="five" onclick="deleteitemfive()">Five</h1>
+<script>
+var heading=document.getElementById("heading")
+var one=document.getElementById("one")
+var two=document.getElementById("two")
+var three=document.getElementById("three")
+var four=document.getElementById("four")
+var five=document.getElementById("five")
+function deleteitem(){
+    heading.remove()
+}
+function deleteitemone(){
+    one.remove()
+}
+function deleteitemtwo(){
+    two.remove()
+}
+function deleteitemthree(){
+    three.remove()
+}
+function deleteitemfour(){
+    four.remove()
+}
+function deleteitefive(){
+    five.remove()
+}
+
+</script> -->
+
+
+<!-- 8. alert with one fn -->
+
+<!-- <h1 onclick="deleteitem()">Hello</h1>
+<h1 onclick="deleteitem()">One</h1>
+<h1 onclick="deleteitem()">Two</h1>
+<h1 onclick="deleteitem()">Three</h1>
+<h1 onclick="deleteitem()">Four</h1>
+<h1 onclick="deleteitem()">Five</h1>
+
+<script>
+function deleteitem()
+{
+    alert("hello")
+}
+
+</script> -->
+
+<!-- 9. deleting elements with one function using event -->
+
+<!-- 
+<h1 onclick="deleteitem(event)">Hello</h1>
+<h1 onclick="deleteitem(event)">One</h1>
+<h1 onclick="deleteitem(event)">Two</h1>
+<h1 onclick="deleteitem(event)">Three</h1>
+<h1 onclick="deleteitem(event)">Four</h1>
+<h1 onclick="deleteitem(event)">Five</h1>
+
+<script>
+function deleteitem(event)
+{
+    event.target.remove()
+}
+
+</script> -->
+
