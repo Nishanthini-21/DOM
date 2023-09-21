@@ -1,0 +1,11 @@
+<input type="text" id="textbox" onkeyup="clicky()">
+<h1 id="header"></h1>
+
+<script>
+    
+    function clicky(){
+        var a=document.getElementById("textbox")
+        var h=document.getElementById("header")
+        h.textContent=a.value
+    }
+</script>

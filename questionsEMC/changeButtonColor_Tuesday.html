@@ -1,0 +1,16 @@
+<button id="button" onclick="change()" >Click Me</button>
+
+<script>
+    var clickc=0
+    function change(){
+        clickc+=1
+        var b=document.getElementById("button")
+        if (clickc%2==0){
+            b.style.backgroundColor=""
+        }
+        else{
+            b.style.backgroundColor="red" 
+        }
+
+    }
+</script>

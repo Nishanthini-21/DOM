@@ -1,0 +1,66 @@
+<style>
+    *{
+        margin:0%;
+        padding:0%;
+    }
+    body{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color:gray
+    }
+
+    .d1{
+        width:300px;
+        height:400px;
+        background-color: white;
+        color:black;
+        text-align: justify;
+        border:2px solid black;
+        position: relative;
+    }
+    .box{
+        display:none;
+    }
+    .button2{
+        margin:2px;
+        background-color: red;
+        font-size:larger;
+        position:absolute;
+        top:5px;
+        right:5px;
+    }
+    .button1:hover,.button2:hover{
+        opacity:0.5;
+    }
+    .button1{
+        margin: 5px; 
+        background-color: green;
+        font-size: larger;
+        position: absolute;
+        top: 5px; 
+        left: 5px;
+    }
+    p{
+        padding:5px;
+        padding-top:30px;
+    }
+</style>
+
+
+<button class="button1" onclick="deleted()">Button</button>
+<div class="d1 box" id="id1">
+    <button class="button2" onclick="cancelled()">X</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ipsam minima repellendus dignissimos recusandae modi nisi atque illo repellat dolorum numquam amet est autem fugiat at error, perspiciatis nemo cupiditate facere eius, ad accusantium ab rerum! Earum nam deserunt nobis distinctio officia doloribus beatae commodi fuga corporis voluptatibus natus, debitis facere consequatur esse reprehenderit itaque nulla, suscipit enim minima repellendus tempore sunt dolor sequi quae. Distinctio, facere voluptates rem deserunt tempore sit assumenda quae sed numquam culpa magnam odio quaerat ipsum recusandae vitae doloremque, blanditiis est non ad, aut maxime quos impedit sequi sapiente. Aliquam dolorum tempora facilis iure. Accusantium ut alias eius commodi quibusdam quasi nobis minima.</p>
+</div>
+
+<script>
+    var d=document.getElementById("id1")
+    function deleted(){
+        d.classList.remove("box")
+    }
+    function cancelled(){
+        d.classList.add("box")
+    }
+
+</script>

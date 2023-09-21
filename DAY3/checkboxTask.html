@@ -1,0 +1,20 @@
+<input class="task" type="checkbox" value="C++">C++
+<input class="task" type="checkbox" value="Python">Python
+<input class="task" type="checkbox" value="Java">Java
+<button onclick="addSkills()">Click Me</button>
+<p id="para">Skills are:</p>
+
+<script>
+    var inputsey=document.querySelectorAll(".task")
+    var para=document.getElementById("para")
+    function addSkills(){
+        var selected=[]
+        inputsey.forEach(function(n){
+            if(n.checked==true){
+                selected.push(n.value)
+            }
+    })
+    para.textContent=`skills are:${selected.join(", ")}`
+
+}
+</script>

@@ -1,0 +1,17 @@
+<input type="text" name="list" id="list">
+<button onclick="additem()">ADD</button>
+<ul id="container"></ul>
+
+
+<script>
+    function additem(){
+        var item=document.getElementById("list")
+        var item1=item.value
+        var container=document.getElementById("container")
+        var list=document.createElement("li")
+
+        list.textContent=item1
+        container.append(list)
+    }
+
+</script>

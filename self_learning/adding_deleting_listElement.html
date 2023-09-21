@@ -1,0 +1,19 @@
+<input id="input" type="text">
+<button onclick="Addli()">ADD li</button>
+<ul id="container"></ul>
+
+<script>
+    var input=document.getElementById("input")
+    var container=document.getElementById("container")
+    function Addli(){
+        var itemn=document.createElement("li")
+        var deletebox=document.createElement("button")
+        itemn.textContent=input.value
+        deletebox.textContent="Delete"
+        itemn.append(deletebox)
+        container.append(itemn)
+        deletebox.addEventListener("click",function(){
+            container.removeChild(itemn)
+        })
+    }
+</script>

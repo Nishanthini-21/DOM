@@ -1,0 +1,15 @@
+<h1>Hii</h1>
+<h1>Bye</h1>
+<h1>How are you</h1>
+<button onclick="show()">Click me</button>
+
+<script>
+    function show(){
+        var heading=document.querySelectorAll("h1")
+        heading.forEach(function(element){
+            console.log(element.textContent)
+            alert(element.textContent)
+        })
+    }
+</script>
+

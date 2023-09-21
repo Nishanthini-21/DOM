@@ -1,0 +1,11 @@
+<input type="text" id="inputbox">
+<h1 id="result"></h1>
+
+<script>
+    var h=document.getElementById("result")
+    var ini=document.getElementById("inputbox")
+    ini.addEventListener("keyup",function(){
+        h.textContent=ini.value
+    })
+</script>
+
